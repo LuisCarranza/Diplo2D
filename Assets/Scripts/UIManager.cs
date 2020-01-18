@@ -26,6 +26,12 @@ public class UIManager : MonoBehaviour
         HUDPanel.SetActive(true);
     }
 
+    void Update()
+    {
+        itemsText.text = "x" + DataLoader.instance.currentPlayer.items;
+        livesText.text = "x" + DataLoader.instance.currentPlayer.lives;
+    }
+
     private void CleanUI()
     {
         HUDPanel.SetActive(false);
