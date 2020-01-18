@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Item
+  - Ground
+  - Barrel
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Barrel
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 4027388801
+    locked: 0
+  - name: Platform
+    uniqueID: 951710991
+    locked: 0
+  - name: Player
+    uniqueID: 4048374461
+    locked: 0
+  - name: Enemy
+    uniqueID: 3125241369
+    locked: 0
+  - name: Barrel
+    uniqueID: 1578794365
+    locked: 0
+  - name: Explosion
+    uniqueID: 2675732529
+    locked: 0
+  - name: Banana
+    uniqueID: 2563048359
+    locked: 0
