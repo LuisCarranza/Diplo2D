@@ -7,6 +7,7 @@ TagManager:
   - Item
   - Ground
   - Barrel
+  - Limiter
   layers:
   - Default
   - TransparentFX

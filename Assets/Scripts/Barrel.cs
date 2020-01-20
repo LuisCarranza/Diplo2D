@@ -12,5 +12,7 @@ public class Barrel : MonoBehaviour
             Instantiate(explosion, collision.transform.position, Quaternion.identity);
             Destroy(this.gameObject);
         }
+        if (collision.transform.tag == "Limiter")
+            Destroy(this.gameObject);
     }
 }

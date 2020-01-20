@@ -20,10 +20,6 @@ public class DKController : MonoBehaviour
     private int countDamage;
     private Animator dkAnimator;
 
-    void Awake()
-    {
-    }
-
     void Start()
     {
         dkSprite = GetComponent<SpriteRenderer>();
@@ -58,6 +54,41 @@ public class DKController : MonoBehaviour
         if (Input.touchCount > 0)
         {
             touch = Input.GetTouch(0);
+            // switch (touch.phase)
+            // {
+            //     case TouchPhase.Began:
+            //         startTouchPosition = touch.position;
+            //         break;
+            //     case TouchPhase.Stationary:
+            //         if (touch.position.x > Screen.width * 0.5f)
+            //         {
+            //             dkAnimator.SetFloat("Speed", 1);
+            //             rbDK.velocity = new Vector2(dkSpeed * Time.deltaTime * Vector2.right.x, rbDK.velocity.y);
+            //             dkSprite.flipX = false;
+            //         }
+            //         if (touch.position.x < Screen.width * 0.5f)
+            //         {
+            //             dkAnimator.SetFloat("Speed", 1);
+            //             rbDK.velocity = new Vector2(-dkSpeed * Time.deltaTime * Vector2.right.x, rbDK.velocity.y);
+            //             dkSprite.flipX = true;
+            //         }
+            //         break;
+            //     case TouchPhase.Ended:
+            //         swipeVector = startTouchPosition - touch.position;
+            //         if (Ground == true)
+            //         {
+            //             // print("Swipe Value: " + swipeVector);
+            //             if (Mathf.Abs(swipeVector.x) < 1.0f)
+            //             {
+            //                 rbDK.AddForce(Vector2.up * dkJumpForce, ForceMode2D.Impulse);
+            //                 dkAnimator.SetTrigger("Jump");
+            //                 dkSource.PlayOneShot(sfx[0]);
+            //                 Ground = false;
+            //             }
+            //         }
+            //         dkAnimator.SetFloat("Speed", 0);
+            //         break;
+            // }
             if (touch.phase == TouchPhase.Began)
             {
                 startTouchPosition = touch.position;
@@ -77,30 +108,25 @@ public class DKController : MonoBehaviour
                     dkSprite.flipX = true;
                 }
             }
-            if (touch.phase == TouchPhase.Ended && Ground == true)
+            if (touch.phase == TouchPhase.Ended)
             {
-                swipeVector = startTouchPosition - touch.position;
-                // print("Swipe Value: " + swipeVector);
-                if (Mathf.Abs(swipeVector.x) < 1.0f)
+                dkAnimator.SetFloat("Speed", 0);
+                if (Ground == true)
                 {
-                    dkAnimator.SetFloat("Speed", 0);
-                    rbDK.AddForce(Vector2.up * dkJumpForce, ForceMode2D.Impulse);
-                    dkAnimator.SetTrigger("Jump");
-                    dkSource.PlayOneShot(sfx[0]);
-                    Ground = false;
+                    swipeVector = startTouchPosition - touch.position;
+                    // print("Swipe Value: " + swipeVector);
+                    if (Mathf.Abs(swipeVector.x) < 1.0f)
+                    {
+                        rbDK.AddForce(Vector2.up * dkJumpForce, ForceMode2D.Impulse);
+                        dkAnimator.SetTrigger("Jump");
+                        dkSource.PlayOneShot(sfx[0]);
+                        Ground = false;
+                    }
                 }
             }
         }
 #endif
     }
-
-    // void OnTriggerEnter2D(Collider2D col)
-    // {
-    //     if (col.tag == "Item")
-    //     {
-    //         Destroy(col.gameObject);
-    //     }
-    // }
 
     void OnCollisionEnter2D(Collision2D col)
     {

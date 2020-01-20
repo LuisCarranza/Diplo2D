@@ -21,6 +21,7 @@ public class DataLoader : MonoBehaviour
             jsonString = sr.ReadToEnd();
             sr.Close();
             currentPlayer = JsonUtility.FromJson<Player>(jsonString);
+            Debug.Log("Load Success");
         }
         else
         {
@@ -36,5 +37,6 @@ public class DataLoader : MonoBehaviour
         sw = new StreamWriter(Application.persistentDataPath + "/" + fileName, false);
         sw.Write(JsonUtility.ToJson(currentPlayer));
         sw.Close();
+        Debug.Log("Save Success");
     }
 }
