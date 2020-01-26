@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DKController : MonoBehaviour
 {
@@ -126,6 +127,15 @@ public class DKController : MonoBehaviour
             }
         }
 #endif
+
+        if (DataLoader.instance.currentPlayer.lives <= 0)
+        {
+            DataLoader.instance.currentPlayer.items = 0;
+            DataLoader.instance.currentPlayer.lives = 3;
+            DataLoader.instance.currentPlayer.lastLevel = 1;
+            DataLoader.instance.WriteData();
+            SceneManager.LoadScene(0);
+        }
     }
 
     void OnCollisionEnter2D(Collision2D col)

@@ -6175,15 +6175,6 @@ MonoBehaviour:
     lives: 0
     lastLevel: 0
   fileName: player.json
-  enemyFileName: enemy.json
-  enemyList: []
-  enemyArray:
-  - barrelTime: 0
-    throwDirection: {x: 0, y: 0}
-  - barrelTime: 0
-    throwDirection: {x: 0, y: 0}
-  - barrelTime: 0
-    throwDirection: {x: 0, y: 0}
 --- !u!4 &1647253901
 Transform:
   m_ObjectHideFlags: 0

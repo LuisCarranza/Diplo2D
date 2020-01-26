@@ -3055,6 +3055,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8343585556355602007, guid: 127980e31b2ebbc4f9c64cd1077366a0,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 127980e31b2ebbc4f9c64cd1077366a0, type: 3}
 --- !u!1 &842434857
@@ -6175,15 +6180,6 @@ MonoBehaviour:
     lives: 0
     lastLevel: 0
   fileName: player.json
-  enemyFileName: enemy.json
-  enemyList: []
-  enemyArray:
-  - barrelTime: 0
-    throwDirection: {x: 0, y: 0}
-  - barrelTime: 0
-    throwDirection: {x: 0, y: 0}
-  - barrelTime: 0
-    throwDirection: {x: 0, y: 0}
 --- !u!4 &1647253901
 Transform:
   m_ObjectHideFlags: 0
