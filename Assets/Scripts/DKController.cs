@@ -151,6 +151,8 @@ public class DKController : MonoBehaviour
             DataLoader.instance.currentPlayer.lives--;
             // countDamage++;
             dkSource.PlayOneShot(sfx[2]);
+
+            RewardedVideo.instance.ShowVideoForLifes();
         }
     }
 
