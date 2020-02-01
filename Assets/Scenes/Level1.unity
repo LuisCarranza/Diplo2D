@@ -4264,6 +4264,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b094a36980d52249b8af20c67fa668d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prefabs:
+  - prefab: {fileID: 8676247231581759705, guid: 16c1d28b85b75ff4bb5be3733e54a0aa,
+      type: 3}
+    amountInBuffer: 10
 --- !u!4 &1170399271
 Transform:
   m_ObjectHideFlags: 0
@@ -6055,6 +6059,51 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1553225951
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1553225953}
+  - component: {fileID: 1553225952}
+  m_Layer: 0
+  m_Name: EnemyManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1553225952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1553225951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4c4507ddff70d84da9804a0d0838d3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyRenderer: {fileID: 2066007898}
+  enemyData: {fileID: 11400000, guid: 46f6ae13bf9fe3243bac4f249c7055d6, type: 2}
+--- !u!4 &1553225953
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1553225951}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 71
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1625463480
 GameObject:
   m_ObjectHideFlags: 0
@@ -7770,6 +7819,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2060408741}
   m_CullTransparentMesh: 0
+--- !u!212 &2066007898 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 4297811723860927692, guid: e05dedc9199fdd342982ca8fc0dd2095,
+    type: 3}
+  m_PrefabInstance: {fileID: 1757629583}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2095192538
 GameObject:
   m_ObjectHideFlags: 0

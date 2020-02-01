@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1b6040201195844c99a8aa2187e64f8, type: 3}
   m_Name: Enemy1
   m_EditorClassIdentifier: 
-  forceDirection: {x: 0, y: 0}
-  launchTime: 0
-  enemySprite: {fileID: 0}
-  enemySound: {fileID: 0}
+  forceDirection: {x: 1, y: -1}
+  launchTime: 5
+  enemySprite: {fileID: 788777011551247564, guid: 022420a3e0209764391e698700f2764d,
+    type: 3}
+  enemySound: {fileID: 8300000, guid: 7bc951030f96b1a41bba1706eb5e55a8, type: 3}
