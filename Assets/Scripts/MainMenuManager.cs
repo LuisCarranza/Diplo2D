@@ -12,7 +12,7 @@ public class MainMenuManager : MonoBehaviour
     void Start()
     {
         sceneToLoad = DataLoader.instance.currentPlayer.lastLevel;
-        Debug.Log(sceneToLoad);
+        Debug.Log("Last level: " + sceneToLoad);
         MainMenu();
     }
 

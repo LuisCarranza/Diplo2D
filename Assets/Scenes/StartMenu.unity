@@ -658,8 +658,8 @@ MonoBehaviour:
     items: 0
     lives: 0
     lastLevel: 0
-  fileName: 
-  enemyFileName: 
+  fileName: player.json
+  enemyFileName: enemy.json
   enemyList: []
   enemyArray:
   - barrelTime: 0

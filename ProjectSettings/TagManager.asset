@@ -8,6 +8,7 @@ TagManager:
   - Ground
   - Barrel
   - Limiter
+  - Checkpoint
   layers:
   - Default
   - TransparentFX

@@ -20,6 +20,7 @@ public class DKController : MonoBehaviour
     private bool Ground;
     private int countDamage;
     private Animator dkAnimator;
+    private int nextLevel;
 
     void Start()
     {
@@ -28,6 +29,7 @@ public class DKController : MonoBehaviour
         rbDK = GetComponent<Rigidbody2D>();
         dkSource = GetComponent<AudioSource>();
         Ground = false;
+        nextLevel = SceneManager.GetActiveScene().buildIndex + 1;
 
         // PlayerProfiler.instance.LoadData();
 
@@ -166,6 +168,14 @@ public class DKController : MonoBehaviour
             // PlayerProfiler.instance.SaveData();
 
             // PlayerPrefs.SetInt("Items", countItem);
+        }
+
+        if (col.tag == "Checkpoint")
+        {
+            Debug.Log("Reached Checkpoint!");
+            DataLoader.instance.currentPlayer.lastLevel = nextLevel;
+            DataLoader.instance.WriteData();
+            SceneManager.LoadScene(nextLevel);
         }
     }
 }

@@ -24,7 +24,7 @@ public class DataLoader : MonoBehaviour
         instance = this;
 
         scene = SceneManager.GetActiveScene();
-        Debug.Log("Scene name: " + scene.name + "\tScene Index: " + scene.buildIndex);
+        // Debug.Log("Scene name: " + scene.name + "\tScene Index: " + scene.buildIndex);
 
         //TODO: Serialize List - https://medium.com/@defuncart/json-serialization-in-unity-9420abbce30b
         // enemyList = new List<Enemy>();
@@ -39,7 +39,6 @@ public class DataLoader : MonoBehaviour
         // sw = new StreamWriter(Application.persistentDataPath + "/" + enemyFileName, false);
         // sw.Write(JsonUtility.ToJson(enemyList, true));
         // sw.Close();
-
         if (File.Exists(Application.persistentDataPath + "/" + fileName))
         {
             sr = new StreamReader(Application.persistentDataPath + "/" + fileName);
@@ -54,13 +53,12 @@ public class DataLoader : MonoBehaviour
             currentPlayer.items = 0;
             currentPlayer.lives = 3;
             currentPlayer.lastLevel = 1;
+            Debug.Log("Player Set");
         }
     }
 
     public void WriteData()
     {
-        // Save last level loaded
-        currentPlayer.lastLevel = scene.buildIndex;
         sw = new StreamWriter(Application.persistentDataPath + "/" + fileName, false);
         sw.Write(JsonUtility.ToJson(currentPlayer, true));
         sw.Close();
