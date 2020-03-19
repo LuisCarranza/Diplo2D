@@ -53,11 +53,13 @@ SpriteAtlas:
     - {fileID: 2800000, guid: c96cb8d5ea14c604a871bdb8540f7464, type: 3}
     - {fileID: 2800000, guid: c10ccf7da56070e4b9046d58e1eb9c04, type: 3}
     - {fileID: 2800000, guid: 5d2a88a25e03ea540af31a06e10a6bc8, type: 3}
-    totalSpriteSurfaceArea: 507482
+    - {fileID: 2800000, guid: 0abeeccf918691c4e9871afd41f85b24, type: 3}
+    - {fileID: 2800000, guid: c9b5b2b6705bd7641afddb03a5d9a1b6, type: 3}
+    totalSpriteSurfaceArea: 829530
     bindAsDefault: 1
     storedHash:
       serializedVersion: 2
-      Hash: c76d7417542656196a8c074090b02bfe
+      Hash: 2d8dd70cb0519b84467e433a4d502a88
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 9073859456479874617, guid: 75ce5c21b78d7074b901ec2844958d05, type: 3}
@@ -117,6 +119,7 @@ SpriteAtlas:
   - {fileID: -3690502768834906923, guid: aa2d3a85fab0f2b41b8351962b951235, type: 3}
   - {fileID: 3815954189206336483, guid: aa2d3a85fab0f2b41b8351962b951235, type: 3}
   - {fileID: 21300000, guid: c96cb8d5ea14c604a871bdb8540f7464, type: 3}
+  - {fileID: 21300000, guid: c9b5b2b6705bd7641afddb03a5d9a1b6, type: 3}
   - {fileID: -6785924249039536078, guid: f7d7c4798da3a4e42a560202c649b9b8, type: 3}
   - {fileID: -3808689628586425114, guid: f7d7c4798da3a4e42a560202c649b9b8, type: 3}
   - {fileID: 4993576191306569215, guid: f7d7c4798da3a4e42a560202c649b9b8, type: 3}
@@ -291,6 +294,7 @@ SpriteAtlas:
   - {fileID: -9182177788924653191, guid: 40d7d17fd0d824746b5154376dc6ec91, type: 3}
   - {fileID: 4169820533901489132, guid: 40d7d17fd0d824746b5154376dc6ec91, type: 3}
   - {fileID: -7298035276004832184, guid: 40d7d17fd0d824746b5154376dc6ec91, type: 3}
+  - {fileID: 21300000, guid: 0abeeccf918691c4e9871afd41f85b24, type: 3}
   m_PackedSpriteNamesToIndex:
   - Idle2_4
   - Idle2_5
@@ -349,6 +353,7 @@ SpriteAtlas:
   - Explosion_3
   - Explosion_2
   - maxresdefault
+  - lucia-manetti-ice
   - JumpDK_5
   - JumpDK_4
   - JumpDK_6
@@ -523,5 +528,6 @@ SpriteAtlas:
   - banana_0
   - banana_3
   - banana_2
+  - d6cfbh1-47931523-77f9-4ff2-b7c4-ea8083cdd544
   m_Tag: MainAtlas
   m_IsVariant: 0

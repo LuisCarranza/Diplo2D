@@ -1648,7 +1648,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 38
+  m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &489588673
 BoxCollider2D:
@@ -2159,12 +2159,12 @@ PrefabInstance:
     - target: {fileID: 8343585556355602007, guid: 9b5e788649b45f245bf0c9926933dfc5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.978602
+      value: 3.07
       objectReference: {fileID: 0}
     - target: {fileID: 8343585556355602007, guid: 9b5e788649b45f245bf0c9926933dfc5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.3776336
+      value: 2.32
       objectReference: {fileID: 0}
     - target: {fileID: 8343585556355602007, guid: 9b5e788649b45f245bf0c9926933dfc5,
         type: 3}
@@ -4349,7 +4349,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 70
+  m_RootOrder: 71
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1174511157
 GameObject:
@@ -6144,7 +6144,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1553225952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6171,7 +6171,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 71
+  m_RootOrder: 72
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1625463480
 GameObject:
@@ -8414,7 +8414,7 @@ PrefabInstance:
     - target: {fileID: 9028710620418295472, guid: 3bad0f504cde704499168cbbec7edeaa,
         type: 3}
       propertyPath: m_RootOrder
-      value: 37
+      value: 38
       objectReference: {fileID: 0}
     - target: {fileID: 9028710620418295472, guid: 3bad0f504cde704499168cbbec7edeaa,
         type: 3}
